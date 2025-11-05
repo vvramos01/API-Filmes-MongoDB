@@ -1,0 +1,25 @@
+{
+  "name": "api-filmes",
+  "version": "1.0.0",
+  "description": "API de filmes com Node.js, Express e MongoDB Atlas - autenticação JWT e front-end simples",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "start:prod": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "Vitoria Viviane",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^8.4.0",
+    "bcrypt": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

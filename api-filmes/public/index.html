@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>API de Filmes - Frontend</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width:900px; margin:20px auto; padding:0 16px; }
+    header { display:flex; gap:12px; align-items:center; }
+    input, button, textarea { padding:8px; margin:4px 0; width:100%; box-sizing:border-box; }
+    .row { display:flex; gap:8px; }
+    .card { border:1px solid #ddd; padding:12px; margin:8px 0; border-radius:8px; }
+    .small { width:120px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>API de Filmes</h1>
+    <div id="userBox"></div>
+  </header>
+
+  <section id="auth">
+    <h2>Registrar</h2>
+    <input id="nome" placeholder="Nome" />
+    <input id="email" placeholder="Email" />
+    <input id="senha" placeholder="Senha" type="password" />
+    <button id="btnRegistrar">Registrar</button>
+
+    <h2>Login</h2>
+    <input id="loginEmail" placeholder="Email" />
+    <input id="loginSenha" placeholder="Senha" type="password" />
+    <button id="btnLogin">Login</button>
+    <hr />
+  </section>
+
+  <section id="criarFilmeSection">
+    <h2>Cadastrar Filme</h2>
+    <input id="titulo" placeholder="Título" />
+    <input id="diretor" placeholder="Diretor" />
+    <input id="genero" placeholder="Gênero" />
+    <input id="ano" placeholder="Ano" />
+    <button id="btnCriar">Criar Filme (autenticado)</button>
+  </section>
+
+  <section>
+    <h2>Filmes</h2>
+    <input id="buscaTitulo" placeholder="Buscar por título" />
+    <button id="btnBuscar">Buscar</button>
+    <div id="lista"></div>
+  </section>
+
+<script src="/app.js"></script>
+</body>
+</html>
